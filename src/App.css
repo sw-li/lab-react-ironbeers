@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
 .App-logo {
@@ -35,4 +38,44 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+.pages{
+  width: 500px;
+  text-align: center;
+
+}
+
+.pages img{
+  width: 100%;}
+
+.header{
+  background-color: aqua;
+  width: 100vw;
+}
+
+.header img{
+  height: 60px;
+}
+
+.oneBeer{
+  display: flex;
+  flex-flow: row nowrap;
+  border-bottom: 1px solid gray;
+}
+
+.oneBeer img{
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.beerInfo{
+  text-align: left;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
 }
