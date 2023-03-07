@@ -14,7 +14,7 @@ function AllBeersPage() {
 
 
     return ( 
-        <div className="allBeersPage">
+        <div>
             <Header></Header>
             {beers.map(beer=>
                 <div className="oneBeer">
@@ -23,6 +23,7 @@ function AllBeersPage() {
                         <h1>{beer.name}</h1>
                         <h2>{beer.tagline}</h2>
                         <h3>Created by : {beer.contributed_by}</h3>
+                        <h3><a href={"/all-beers/"+beer._id}>More details</a></h3>
                     </div>
                 </div>
             )}

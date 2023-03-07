@@ -79,3 +79,34 @@
   flex-flow: column nowrap;
   align-items: flex-start;
 }
+
+.centeredColumn{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.oneBeerPage{
+  margin-top: 30px;
+  width: 500px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-self: center;
+}
+
+
+.oneBeerPage img{
+  height: 500px;
+}
+
+.oneLine{
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.txtColorGray{
+  color: gray;
+}
