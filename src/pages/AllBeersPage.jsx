@@ -25,7 +25,8 @@ function AllBeersPage() {
         <div>
             <Header></Header>
             <div className="searchBar">
-            <input type="text" onChange={e=>{ setSearchWord(e.target.value); handleSearch(e.target.value)}}/>
+            <label htmlFor="searchBar">Search by beer name</label>
+            <input type="text" id="searchBar" onChange={e=>{ setSearchWord(e.target.value); handleSearch(e.target.value)}}/>
             </div>
             <br />
             {beers.map(beer=>

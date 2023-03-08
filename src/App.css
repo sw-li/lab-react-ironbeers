@@ -141,3 +141,9 @@ form button{
   border-radius: 10px;
 }
 
+.searchBar{
+  padding: 10px;
+}
+.searchBar input{
+  margin-left: 40px;
+}

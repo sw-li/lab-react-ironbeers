@@ -23,7 +23,6 @@ function OneBeerPage() {
 
       <div className="oneBeerPage">
         <div className="beerImg">
-          {" "}
           <img src={beer.image_url} alt="" />
         </div>
         <div className="beerInfo">
