@@ -5,6 +5,8 @@ import Header from "../components/Header";
 
 function AllBeersPage() {
     const [beers, setBeers] = useState([])
+    const [searchWord, setSearchWord] = useState("")
+
 
     useEffect(()=>{
         axios.get("https://ih-beers-api2.herokuapp.com/beers")
@@ -12,10 +14,20 @@ function AllBeersPage() {
         .catch(err=>console.log("error in retriving all beers", err))
     },[])
 
+    const handleSearch = (keyword)=>{
+        axios.get("https://ih-beers-api2.herokuapp.com/beers")
+        .then(beers => {setBeers(beers.data.filter(beer=> beer.name.toLowerCase().includes(keyword.toLowerCase())))})
+        .then(()=>console.log(beers))
+        .catch(err=>console.log("error on search:", err))
+    }
 
     return ( 
         <div>
             <Header></Header>
+            <div className="searchBar">
+            <input type="text" onChange={e=>{ setSearchWord(e.target.value); handleSearch(e.target.value)}}/>
+            </div>
+            <br />
             {beers.map(beer=>
                 <div className="oneBeer">
                     <div className="beerImg"> <img src={beer.image_url} alt="" /></div>

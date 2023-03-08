@@ -26,7 +26,7 @@ function NewBeerPage() {
       setBrewersTips("")
       setAtenuationLevel(0)
       setContributedBy("")
-      navigate("/all-beers")
+      navigate("/beers")
     })
   }
   return (

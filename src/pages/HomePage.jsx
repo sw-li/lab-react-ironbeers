@@ -9,7 +9,7 @@ function Homepage(){
         <br />
         <div className="pages">
             <img src={beersImg} alt="all beers" />
-            <h1> <a href="/all-beers">All Beers</a> </h1>
+            <h1> <a href="/beers">All Beers</a> </h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nulla voluptate porro amet dolores perferendis, quis consequatur quod quibusdam. Officiis architecto illo ipsum esse blanditiis recusandae iure suscipit nesciunt necessitatibus.</p>
         </div>
         <div className="pages">
