@@ -110,3 +110,34 @@
 .txtColorGray{
   color: gray;
 }
+
+.newBeerPage{
+display: flex;
+flex-flow: column nowrap;
+align-items: center;
+}
+
+form{
+width: 300px;
+display: flex;
+flex-flow: column nowrap;
+text-align: left;
+}
+
+textarea, input{
+  border: 1px solid rgb(216, 211, 211);
+  border-radius: 10px;
+  padding: 5px 15px;
+}
+
+textarea{
+  height: 100px;
+}
+
+form button{
+  border: 0;
+  background-color: aqua;
+  color: white;
+  border-radius: 10px;
+}
+
